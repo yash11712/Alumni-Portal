@@ -1,0 +1,33 @@
+{% extends 'home/base.html' %}
+{% block content %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+
+
+<body>
+    <section>
+        <div class="icon"><img src="{% static 'home/school.png' %}" alt="">
+            <div class="cont">
+                <h5>STEP 1 OF 3</h5>
+                <h1>LET'S GET STARTED</h1>
+            </div>
+        </div>
+        <br class="form center ">
+            <br></br>
+            <h3>What you are and what you want to register</h3>
+            <br></br>
+            <div class="reg">
+                <button>Instititue</button>
+                <button>Student</button>
+            </div>
+            <button id="next">Next <i style="font-size: 22px;" class="fa fa-angle-right" aria-hidden="true"></i></button>
+    </section>
+</body>
+{% endblock %}
